@@ -1,0 +1,239 @@
+:root {
+    --cor_um: #c4a47c;
+    --cor_dois: #fff;
+    --cor_tres:#000000;
+    --cor_quatro: #604829;
+    --cor_cinco:#666;
+    --cor_seis: #ACACAC; 
+    --fonte_um: 'Fraunces', serif;
+    --fonte_dois:  'Lato', sans-serif;
+    --fonte_tres: 'Oswald', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--cor_quatro);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+}
+header img {
+    width: 65px;
+    position: absolute;
+    left: 15%;
+    top: 0;
+}
+
+header nav {
+    display: inline;
+    position: absolute;
+    right: 200px;
+    top: 15px;
+}
+header nav a {
+    padding: 0 10px;
+    color: var(--cor_um);
+    text-decoration: none;
+    font-family: var(--fonte_tres);
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 5px 5px 8px #000000;
+}
+
+.banner {
+    height: 100vh;
+    background-size: cover;
+    background-image: url(img/parallax-imagem1.png);
+    background-attachment: fixed;
+    position: relative;
+}
+
+.banner h1 {
+    font-family: var(--fonte_um);
+    font-size: 70px;
+    color: var(--cor_um);
+    position: absolute;
+    top: 45%;
+    left: 12%;
+}
+
+.desc_um, .desc_dois, .desc_tres {
+    width: 100%;
+    height: 325px;
+    padding-top: 30px;
+}
+
+.desc_um h2, .desc_dois h2, .desc_tres h2 {
+    color: var(--cor_um);
+    font-family: var(--fonte_tres);
+    font-size: 18px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.desc_um p, .desc_dois p, .desc_tres p {
+    font-family: var(--fonte_dois);
+    font-size: 16px;
+    color: var(--cor_cinco);
+    max-width: 1024px;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 150%;
+}
+
+.prlx_dois {
+    background-image: url(img/parallax-imagem2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+}
+
+.prlx_tres {
+    background-image: url(img/parallax-imagem3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+}
+
+.prlx_dois h2, .prlx_tres h2 {
+    font-family: var(--fonte_um);
+    font-size: 20px;
+    font-weight: lighter;
+    color: var(--cor_seis);
+    background-color: #604829;
+    width: 400px;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+}
+
+.contatos {
+    background-image: url(img/parallax-imagem4.png);
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+
+.contatos h2 {
+    font-family: var(--fonte_tres);
+    font-family: 20px;
+    color: var(--cor_dois);
+    background-color: #604829;
+    width: 300px;
+    font-weight: lighter;
+    text-align: center;
+    position: absolute;
+    top: 13%;
+    left: 40%;
+}
+
+.contatos iframe {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+.contatos div {
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+    background-color: #604829;
+    font-family: var(--fonte_tres);
+    font-size: 14px;
+    color: var(--cor_dois);
+    font-weight: lighter;
+    text-align: center;
+    width: 500px;
+}
+
+.horarios {
+    background-image: url(img/cafeteria.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horarios ul  {
+    font-family: var(--fonte_tres);
+    color: var(--cor_dois);
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 3;
+    width: 100%;
+    max-width: 768px;
+    padding-top: 40px;    
+
+    
+}
+.horarios h2 {
+    font-family: var(--fonte_tres);
+    color: var(--cor_dois);
+    font-size: 18px;
+    font-weight: lighter;
+    padding-top: 80px;    
+}
+
+.horarios li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.linha {
+    width: 300px;
+    height: 1px;
+    background-color: var(--cor_seis); 
+    height: 1px;
+    background-color: #666;
+    flex: 1 1 auto;
+}
+
+.horarios li h3 {
+    flex: 0 1 auto;
+}
+
+.horarios li p, span {
+    flex: 0 1 100px;
+    text-align: right;
+}
+
+.horarios span{
+    color: #c4a47c;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    position: relative;
+    padding-top: 15px;
+}
+
+footer p {
+    color: var(--cor_dois);
+    text-align: center;
+    font-family: var(--fonte_tres);
+    font-size: 12px;
+}
+
+footer img {
+    width: 60px;
+    position: absolute;
+    top: -30px;
+    right: 50px;
+}
